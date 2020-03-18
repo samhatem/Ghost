@@ -50,7 +50,6 @@ body {
     text-indent: -9999px;
 }
 
-
 /* 2. Layout - Page building blocks
 /* ---------------------------------------------------------- */
 
@@ -511,7 +510,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     fill: #fff;
 }
 
-.social-link-fb svg {
+.social-link-gh svg {
     height: 1.6rem;
 }
 
@@ -608,24 +607,26 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .post-feed {
     position: relative;
-    display: flex;
+    display: inline-grid;
     flex-wrap: wrap;
-    margin: 0 -20px;
     padding: 50px 0 0;
-    background: #fff;
 }
 
 .post-card {
     position: relative;
     flex: 1 1 301px;
-    display: flex;
+    display: inherit;
     flex-direction: column;
     overflow: hidden;
-    margin: 0 0 40px;
-    padding: 0 20px 40px;
+    margin: 20px;
+    padding: 20px;
     min-height: 220px;
-    border-bottom: 1px solid color(var(--lightgrey) l(+12%));
     background-size: cover;
+    background-color: #fcfcfc;
+    border-radius: 20px;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;  
+    -moz-box-shadow: 3px 3px 5px 6px #ccc; 
+    box-shadow: 3px 3px 5px 6px #ccc;
 }
 
 .post-card-image-link {
