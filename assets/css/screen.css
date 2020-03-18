@@ -607,7 +607,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .post-feed {
     position: relative;
-    display: inline-grid;
     flex-wrap: wrap;
     padding: 50px 0 0;
 }
@@ -622,8 +621,14 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 20px;
     min-height: 220px;
     background-size: cover;
+}
+
+.rounded-border {
     background-color: #fcfcfc;
     border-radius: 20px;
+}
+
+.drop-shadow {
     -webkit-box-shadow: 3px 3px 5px 6px #ccc;  
     -moz-box-shadow: 3px 3px 5px 6px #ccc; 
     box-shadow: 3px 3px 5px 6px #ccc;
