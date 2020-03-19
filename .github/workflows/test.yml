@@ -5,7 +5,6 @@ on:
     branches:
       - master
       - 2.x
-
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -28,7 +27,7 @@ jobs:
           MYSQL_ROOT_PASSWORD: root
           MYSQL_DATABASE: ghost_testing
         ports:
-          - 3306
+          - 3306:3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
     name: Node ${{ matrix.node }} - ${{ matrix.env.DB }}
     steps:
@@ -37,7 +36,7 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: yarn
-
+      - run: yarn lint
       - run: grunt test-acceptance --verbose
       - run: grunt test-unit --verbose
       - run: grunt test-regression --verbose
