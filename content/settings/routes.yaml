@@ -1,0 +1,11 @@
+routes:
+  /: home
+
+collections:
+  /research/:
+    permalink: /research/{slug}/
+    template: index
+
+taxonomies:
+  tag: /tag/{slug}/
+  author: /author/{slug}/

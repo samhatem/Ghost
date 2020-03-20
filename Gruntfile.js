@@ -8,6 +8,8 @@
 
 require('./core/server/overrides');
 
+const LIVE_RELOAD_PORT = 1337;
+
 const config = require('./core/server/config');
 const urlService = require('./core/frontend/services/url');
 const _ = require('lodash');
@@ -70,7 +72,7 @@ const configureGrunt = function (grunt) {
                     'content/themes/casper/assets/js/*.js'
                 ],
                 options: {
-                    livereload: true,
+                    livereload: LIVE_RELOAD_PORT,
                     interval: 500
                 }
             },
@@ -85,7 +87,7 @@ const configureGrunt = function (grunt) {
                 tasks: ['express:dev'],
                 options: {
                     spawn: false,
-                    livereload: true,
+                    livereload: LIVE_RELOAD_PORT,
                     interval: 500
                 }
             }
