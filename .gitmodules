@@ -3,7 +3,7 @@
 	url = ../../TryGhost/Casper.git
 [submodule "core/client"]
 	path = core/client
-	url = ../../TryGhost/Ghost-Admin.git
+	url = git@github.com:samhatem/Ghost-Admin.git
 [submodule "content/themes/London"]
 	path = content/themes/London
 	url = git@github.com:samhatem/London.git
