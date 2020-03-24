@@ -42,7 +42,7 @@ The front end is a fork of a open source publishing platform. The project is cal
          "client": "mysql",
          "connection": {
            "host": "127.0.0.1",
-           "port": port,
+           "port": 3306,
            "user": "ghost_user",
            "password": "your_password",
            "database": "ghost_database"
