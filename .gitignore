@@ -89,10 +89,6 @@ projectFilesBackup
 # TernJS
 .tern-project
 
-# Ghost DB file
-*.db
-*.db-journal
-
 .build
 .dist
 .tmp
@@ -103,9 +99,6 @@ CHANGELOG.md
 # Test generated files
 /core/test/functional/*.png
 /core/test/coverage
-
-# ignore all custom json files for config
-/config.*.json
 
 # Built asset files
 /core/built

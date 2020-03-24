@@ -68,8 +68,8 @@ const configureGrunt = function (grunt) {
         watch: grunt.option('no-server-watch') ? {files: []} : {
             livereload: {
                 files: [
-                    'content/themes/casper/assets/css/*.css',
-                    'content/themes/casper/assets/js/*.js'
+                    'content/themes/London/assets/css/*.css',
+                    'content/themes/London/assets/js/*.js'
                 ],
                 options: {
                     livereload: LIVE_RELOAD_PORT,
