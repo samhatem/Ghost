@@ -45,10 +45,12 @@ The front end is a fork of the open source CMS [Ghost](ghost.org).
     }
 ```
 
-## Running ghost on localhost
+### Running ghost on localhost
 
 ```bash
     grunt dev
 ```
 
 This will run the ghost client on port 2638. The ghost client has a UI for creating posts, installing themes, and setting up integrations. This can be found at localhost:2638/ghost.
+
+Some helpful [commands](https://ghost.org/docs/install/source/#stay-up-to-date).
