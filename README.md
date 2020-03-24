@@ -1,16 +1,10 @@
-The front end is a fork of a open source publishing platform. The project is called Ghost. Clear Rain's repository is below.
-
-[samhatem/clear-ghost](https://github.com/samhatem/clear-ghost)
+The front end is a fork of the open source CMS [Ghost](ghost.org).
 
 ### Prerequisites
 
-- Node.js
+- [Node.js](https://nodejs.org/en/)
 
-[Node.js](https://nodejs.org/en/)
-
-- Yarn
-
-[Yarn](https://classic.yarnpkg.com/en/docs/install#alternatives-tab)
+- [Yarn](https://classic.yarnpkg.com/en/docs/install#alternatives-tab)
 
 ### Setup
 
