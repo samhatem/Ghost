@@ -69,7 +69,8 @@ const configureGrunt = function (grunt) {
             livereload: {
                 files: [
                     'content/themes/London/assets/css/*.css',
-                    'content/themes/London/assets/js/*.js'
+                    'content/themes/London/assets/js/*.js',
+                    'content/themes/London/assets/css/components/*.css'
                 ],
                 options: {
                     livereload: LIVE_RELOAD_PORT,
@@ -554,8 +555,6 @@ const configureGrunt = function (grunt) {
     // `grunt dev` manages starting an express server and restarting the server whenever core files change (which
     // require a server restart for the changes to take effect) and also manage reloading the browser whenever
     // frontend code changes.
-    //
-    // Note that the current implementation of watch only works with casper, not other themes.
     grunt.registerTask('dev', 'Dev Mode; watch files and restart server on changes', function () {
         if (grunt.option('client')) {
             grunt.task.run(['clean:built', 'bgShell:client']);

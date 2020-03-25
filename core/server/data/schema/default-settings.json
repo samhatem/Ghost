@@ -24,7 +24,7 @@
     },
     "blog": {
         "title": {
-            "defaultValue": "Ghost",
+            "defaultValue": "Clear Rain",
             "validations": {
                 "isLength": {
                     "max": 150
@@ -32,7 +32,7 @@
             }
         },
         "description": {
-            "defaultValue": "The professional publishing platform",
+            "defaultValue": "A Framework for Online Communities",
             "validations": {
                 "isLength": {
                     "max": 200
@@ -40,10 +40,10 @@
             }
         },
         "logo": {
-            "defaultValue": "https://static.ghost.org/v1.0.0/images/ghost-logo.svg"
+            "defaultValue": ""
         },
         "cover_image": {
-            "defaultValue": "https://static.ghost.org/v3.0.0/images/publication-cover.png"
+            "defaultValue": ""
         },
         "icon": {
             "defaultValue": ""
@@ -101,10 +101,10 @@
             "defaultValue": "{}"
         },
         "navigation": {
-            "defaultValue": "[{\"label\":\"Home\", \"url\":\"/\"},{\"label\":\"Tag\", \"url\":\"/tag/getting-started/\"}, {\"label\":\"Author\", \"url\":\"/author/ghost/\"},{\"label\":\"Help\", \"url\":\"https://ghost.org/docs/\"}]"
+            "defaultValue": "[{\"label\":\"Home\", \"url\":\"/\"},{\"label\":\"Overview\", \"url\":\"/blog/overview/\"},{\"label\":\"Blog\", \"url\":\"/blog/\"}]"
         },
         "secondary_navigation": {
-            "defaultValue": "[]"
+            "defaultValue": "[{\"label\":\"Overview\", \"url\":\"/research/overview/\"},{\"label\":\"Research\", \"url\":\"/research/\"},{\"label\":\"Us\", \"url\":\"https://ghost.org/about-us/\"}]"
         },
         "slack": {
             "defaultValue": "[{\"url\":\"\", \"username\":\"Ghost\"}]"
