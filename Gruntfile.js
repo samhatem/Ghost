@@ -8,7 +8,7 @@
 
 require('./core/server/overrides');
 
-const LIVE_RELOAD_PORT = 1337;
+// const LIVE_RELOAD_PORT = 1337;
 
 const config = require('./core/server/config');
 const urlService = require('./core/frontend/services/url');
@@ -73,7 +73,7 @@ const configureGrunt = function (grunt) {
                     'content/themes/London/assets/css/components/*.css'
                 ],
                 options: {
-                    livereload: LIVE_RELOAD_PORT,
+                    livereload: true, // change to LIVE_RELOAD_PORT
                     interval: 500
                 }
             },
@@ -88,7 +88,7 @@ const configureGrunt = function (grunt) {
                 tasks: ['express:dev'],
                 options: {
                     spawn: false,
-                    livereload: LIVE_RELOAD_PORT,
+                    livereload: true, // change to LIVE_RELOAD_PORT
                     interval: 500
                 }
             }
